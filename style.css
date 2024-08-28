@@ -1,0 +1,112 @@
+header {
+    height: 80px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-around;
+    gap: 80px;
+}
+
+header form {
+    margin-top: 10px;
+}
+
+header h5 {
+    position: relative;
+    top: -80px;
+    font-size: 50px;
+    font-family: 'Segoe UI', Verdana;
+}
+
+header form input {
+    position: relative;
+    left: -200px;
+    width: 600px;
+    height: 50px;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+header form input:focus{
+    outline: 0;
+}
+/* header form button {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 0px;
+} */
+
+.monsters {
+    position: relative;
+    text-align: center;
+    /* bottom: -50%; */
+    /* border: 1px solid black; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 5px;
+    height: auto;
+}
+
+.monster {
+    width: 400px;
+    height: 420px;
+    position: relative;
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: 3px 3px 5px black, -3px -3px 5px black;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+img {
+    /* margin-top: 20px; */
+    width: 300px;
+    height: 300px;
+    background-color: blueviolet;
+    background-blend-mode: difference;
+    /* padding: 20px; */
+    background-size: contain;
+    border-radius: 12px;
+}
+
+.name {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: -15px;
+}
+
+.email {
+    font-size: 25px;
+    padding: 0;
+}
+
+.monster:hover {
+    /* transform: translateY(15px); */
+    transition-timing-function: ease-out;
+
+    transform: translateY(-5px);
+
+}
+
+
+.not-found {
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    height: auto;
+}
+.not-found h1{
+    font-size: 74px;
+    font-weight: bold;
+    opacity: 0.7;
+    font-family: 'Segoe UI', Verdana, sans-serif;
+}
+.not-found span {
+    font-size: 300px;
+    color: black;
+    opacity: 0.4;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
